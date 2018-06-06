@@ -1,0 +1,47 @@
+﻿body {
+    background-color: gainsboro;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+}
+
+.table {
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+#uset-data label {
+    font-size: 20px;
+}
+
+#uset-data input {
+    border: 3px solid black;
+    width: 500px;
+    height: 20px;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+#uset-data textarea {
+    border: 3px solid black;
+    width: 500px;
+    height: 100px;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.button {
+    border-color: black;
+    font-size: 30px;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 400px;
+}

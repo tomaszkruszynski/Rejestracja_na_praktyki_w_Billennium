@@ -1,0 +1,42 @@
+﻿@model Rejestracja_na_praktyki_w_Billennium.Models.Praktykant
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/Style.css")" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Rejestracja na praktyki w Billennium</h1>
+        <hr />
+    </div>
+
+    <div class="table">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <table id="uset-data">
+                <tr>
+                    <td>@Html.LabelFor(model => model.Name, "Imię i nazwisko")</td>
+                    <td>@Html.TextBoxFor(model => model.Name)</td>
+                    <td>@Html.ValidationMessageFor(model => model.Name)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Note, "Dlaczego chciałbyś uczestniczyć w praktykach?")</td>
+                    <td>@Html.TextAreaFor(model => model.Note)</td>
+                    <td>@Html.ValidationMessageFor(model => model.Note)</td>
+                </tr>
+            </table>
+            <input type="submit" value="Wyślij" class="button" />
+        }
+    </div>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
